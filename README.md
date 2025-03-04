@@ -89,16 +89,21 @@ echo "SNS Topic ARN: $SNS_TOPIC_ARN"
 ```
 
 ✅ **Subscribe Email to SNS Topic**  
+change your email address.
 ```sh
 aws sns subscribe --topic-arn $SNS_TOPIC_ARN --protocol email --notification-endpoint your-email@example.com
 ```
 👉 **Check your email** and confirm the AWS SNS subscription.
-
-✅ **Update Lambda Function Variables to use SNS ARN**
-Update your lambda function present in the repo with SNS topic ARN
 ---
 
 ## **3️⃣ Create Lambda Function**  
+
+```bash
+wget https://github.com/sharafat678/health-check/blob/main/lambda_function.py
+```
+
+✅ **Update Lambda Function to use SNS ARN**
+Update your lambda function present in the repo with SNS topic ARN
 
 Run zip command inside the directory where lambda_funtion.py is located.
 

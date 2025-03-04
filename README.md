@@ -15,9 +15,7 @@ At the end of the execution, the Lambda function **sends an email notification**
 
 ---
 
-## **Implementation Steps** 
-
-## **Pre-requisites** 
+## **Implementation Steps**  
 
 ✅ **Steps to create the IAM Role:**  
 
